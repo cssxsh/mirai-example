@@ -36,6 +36,9 @@ mirai {
     // 指定 runConsole 时的 mirai 版本, 可以用来测试兼容性
     coreVersion = System.getenv("MIRAI_VERSION") ?: "2.15.0"
     consoleVersion = System.getenv("MIRAI_VERSION") ?: "2.15.0"
+
+    // 指定编译的 java 版本，如果你需要更新的版本的特性
+    jvmTarget = JavaVersion.VERSION_1_8
 }
 
 tasks {
