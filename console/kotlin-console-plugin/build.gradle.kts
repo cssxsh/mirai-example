@@ -9,6 +9,9 @@ group = "com.example.mirai"
 version = "0.1.0"
 
 repositories {
+    // 镜像库，加快依赖下载速度
+    maven("https://repo.huaweicloud.com/repository/maven")
+    // Maven Central
     mavenCentral()
     // 快照，如果你需要使用开发版 mirai, 那么就要添加这个
     maven("https://repo.mirai.mamoe.net/snapshots")
