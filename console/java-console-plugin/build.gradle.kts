@@ -15,6 +15,8 @@ repositories {
 }
 
 dependencies {
+    // 数据库驱动
+    implementation("com.mysql:mysql-connector-j:8.1.0")
     testImplementation(kotlin("test"))
     //
     implementation(platform("net.mamoe:mirai-bom:2.15.0"))
