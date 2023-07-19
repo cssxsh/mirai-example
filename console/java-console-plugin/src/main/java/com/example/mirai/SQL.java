@@ -1,5 +1,6 @@
 package com.example.mirai;
 
+import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ServiceLoader;
@@ -14,7 +15,7 @@ public class SQL {
         ClassLoader plugin = SQL.class.getClassLoader();
         try {
             current.setContextClassLoader(plugin);
-            ServiceLoader.load(java.sql.Driver.class).reload();
+            ServiceLoader.load(Driver.class).forEach((driver) -> {});
 
             // region Database init, 下面的代码自行换成你自己的初始化代码
 
