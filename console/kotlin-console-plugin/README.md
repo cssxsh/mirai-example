@@ -12,6 +12,10 @@ onLoad -> onEnable -> onDisable
 
 `gradlew runConsole`
 
+## 打包插件
+
+`gradlew buildPlugin`
+
 ## 整合包
 
 `gradlew copyConsoleRuntime`
