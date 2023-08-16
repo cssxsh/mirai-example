@@ -12,6 +12,10 @@ Mirai 相关示例代码
 
 简单的 Kotlin 插件示例
 
+### [Example Auto Load Plugin Config](console/kotlin-console-plugin/src/main/kotlin/com/example/mirai/ExampleAutoLoadPluginConfig.kt)
+
+文件更改后自动重载配置
+
 ## [Example Java Console Plugin](console/java-console-plugin)
 
 简单的 Java 插件示例

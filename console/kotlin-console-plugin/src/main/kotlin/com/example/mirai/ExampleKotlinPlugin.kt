@@ -29,6 +29,9 @@ internal object ExampleKotlinPlugin : KotlinPlugin(
 
     override fun onEnable() {
         logger.info("enable, 用于指令注册，数据载入等操作")
+
+        ExampleAutoLoadPluginConfig.reload()
+
         ExampleSimpleCommand.register()
         ExampleCompositeCommand.unregister()
 
