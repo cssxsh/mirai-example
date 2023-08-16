@@ -17,8 +17,8 @@ import net.mamoe.mirai.message.data.Image.Key.queryUrl
 internal object ExampleKotlinPlugin : KotlinPlugin(
     JvmPluginDescription(
         id = "com.example.mirai.kotlin-console-plugin",
-        name = "fix-protocol-version",
-        version = "1.9.6"
+        name = "kotlin-console-plugin",
+        version = "0.0.0"
     ) {
         author("cssxsh")
     }
