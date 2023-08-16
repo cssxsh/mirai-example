@@ -60,7 +60,7 @@ public object ExampleAutoLoadPluginConfig : ReadOnlyPluginConfig(saveName = "exa
                 return@launch
             }
             // 注册监听器
-            runInterruptible(Dispatchers.IO) {
+            val watch = runInterruptible(Dispatchers.IO) {
                 folder.register(
                     watcher,
                     StandardWatchEventKinds.ENTRY_CREATE,
@@ -82,6 +82,7 @@ public object ExampleAutoLoadPluginConfig : ReadOnlyPluginConfig(saveName = "exa
                 }
                 key.reset()
             }
+            watch.cancel()
         }
     }
 }
